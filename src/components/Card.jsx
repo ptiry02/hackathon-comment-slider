@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import bgLogo from '../assets/icons/Vector.png'
-import picture from '../assets/images/_MG_9829.jpeg'
+import ProfilePic from './ProfilePic'
 
 const Card = ({ name, text }) => {
   return (
     <Wrapper>
       <Title>
         {/* This image should come from backend */}
-        <Img src={picture} />
+        <ProfilePic />
         <Name>{name}</Name>
       </Title>
       <Comment>{text}</Comment>
@@ -34,10 +34,6 @@ const Title = styled.div`
   align-items: center;
   column-gap: 17px;
   margin-bottom: 27px;
-`
-const Img = styled.img`
-  width: 50px;
-  border-radius: 999px;
 `
 const Name = styled.h1`
   font-weight: 700;
