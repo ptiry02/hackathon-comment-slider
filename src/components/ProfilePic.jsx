@@ -1,11 +1,9 @@
-import picture from '../assets/images/_MG_9829.jpeg'
-import flag from '../assets/icons/icons8-spain-48.png'
 import styled from 'styled-components'
 
-const ProfilePic = () => {
+const ProfilePic = ({ img, flag }) => {
   return (
     <Wrapper>
-      <Picture src={picture} alt="profile_picture" />
+      <Picture src={img} alt="profile_picture" />
       <Flag src={flag} alt="flag" />
     </Wrapper>
   )

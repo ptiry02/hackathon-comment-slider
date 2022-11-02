@@ -2,12 +2,11 @@ import styled from 'styled-components'
 import bgLogo from '../assets/icons/Vector.png'
 import ProfilePic from './ProfilePic'
 
-const Card = ({ name, text }) => {
+const Card = ({ profilePic, flag, name, text }) => {
   return (
     <Wrapper>
       <Title>
-        {/* This image should come from backend */}
-        <ProfilePic />
+        <ProfilePic img={profilePic} flag={flag} />
         <Name>{name}</Name>
       </Title>
       <Comment>{text}</Comment>
