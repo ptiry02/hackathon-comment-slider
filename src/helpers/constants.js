@@ -9,12 +9,12 @@ export const CardsInfo = [
     name: 'Paul Tiry',
     picture,
     flag: france,
-    comment: 'This is a new test',
+    comment: 'This is a new test.',
   },
   {
     name: 'Jhon Doe',
     picture,
     flag: spain,
-    comment: 'This is a new test',
+    comment: 'This test comment is for the second card.',
   },
 ]
