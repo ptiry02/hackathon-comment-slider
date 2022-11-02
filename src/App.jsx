@@ -1,15 +1,7 @@
-import styled from 'styled-components'
+import Card from './components/Card'
 
 function App() {
-  return <Title>Happy Coding!</Title>
+  return <Card name={'Paul Tiry'} text={'This is a test'} />
 }
 
 export default App
-
-const Title = styled.h1`
-  width: 100vw;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
