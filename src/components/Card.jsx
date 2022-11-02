@@ -35,8 +35,9 @@ const Title = styled.div`
   column-gap: 17px;
   margin-bottom: 27px;
 `
-const Name = styled.h1`
+const Name = styled.h3`
   font-weight: 700;
+  margin: 0;
 `
 const Comment = styled.p`
   color: #cdcdcd;

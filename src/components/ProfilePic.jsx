@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const ProfilePic = ({ img, flag }) => {
   return (
     <Wrapper>
-      <Picture src={img} alt="profile_picture" />
+      <Picture img={img}></Picture>
       <Flag src={flag} alt="flag" />
     </Wrapper>
   )
@@ -15,9 +15,13 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 `
-const Picture = styled.img`
+const Picture = styled.div`
   width: 50px;
+  height: 50px;
   border-radius: 999px;
+  background-image: url(${({ img }) => img});
+  background-repeat: no-repeat;
+  background-size: cover;
 `
 const Flag = styled.img`
   position: absolute;
